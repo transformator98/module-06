@@ -252,7 +252,6 @@ body {
 .team__list-item:hover .team-wrapper,
 .team__list-item:focus .team-wrapper {
   transform: translate(-10px, -10px);
-  box-shadow: 10px 10px 0 #95e1d3;
 }
 
 .team-wrapper {
@@ -260,22 +259,15 @@ body {
   transition: all 0.2s linear;
 }
 
-.team-wrapper:after {
+.fone {
   content: "";
   z-index: -1;
-  position: absolute;
   top: 0px;
   left: 0px;
   display: block;
   width: 100%;
-  height: 100%;
+  background-color: var(--color-logo);
 }
-
-/* .team-img {
-  transition-property: transform;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
-} */
 
 .team-name {
   text-transform: uppercase;
@@ -305,8 +297,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* box-shadow: 10px 10px var(--color-logo); */
-
   top: 0px;
   left: 0px;
   visibility: hidden;
